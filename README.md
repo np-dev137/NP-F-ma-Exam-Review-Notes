@@ -2,12 +2,12 @@
 
 A collection of LaTeX reviews of F=ma exams from 2009–2026.
 
-These notes document my solutions, mistake analyses, conceptual clarifications, and problem-solving techniques developed while preparing for the F=ma Exam. The goal of this project is not only to solve problems, but also to identify recurring patterns, common mistakes, and useful approaches that can be applied across future exams.
+These notes document my solutions for every problem I made a mistake on or wanted to make note of while preparing for the F=ma Exam. It includes problem-solving techniques and concise notes where helpful. The goal of this project is to identify patterns, common mistakes, and useful approaches that can be applied across future exams.
 
 ## Contents
 
 ### Introduction
-- Introduction and project overview
+- A welcome to my notes
 
 ### Exam Reviews
 - 2009 — In Progress
