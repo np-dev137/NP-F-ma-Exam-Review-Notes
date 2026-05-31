@@ -1,0 +1,162 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\title{2021 F=ma Exam Review}
+\author{Nathan P.}
+\date{January 14, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Problem 2}
+\hspace*{\parindent} When it goes up the ramp, idealize the switching from horizontal to inclined plane by having $v$ jump from horizontal to diagonal, so there is a sudden jump downward in the horizontal velocity.
+
+\section*{Problem 4}
+\hspace*{\parindent} This can be done with Coriolis force or angular momentum.
+
+\[
+d\propto at^2, \qquad a\propto F_{\mathrm{cor}}\propto v\propto \sqrt{h}
+\]
+with
+\[
+F_{\mathrm{cor}}=2mv\omega, \qquad v=\sqrt{2gh}, \qquad t\propto \sqrt{h}
+\]
+so
+\[
+d\propto \sqrt{h}\,h\propto h^{3/2}
+\]
+
+\section*{Problem 5}
+\hspace*{\parindent} The shortest time to start and stop at rest with constant acceleration and deceleration is when the object accelerates up to maximum speed and immediately starts decelerating (similar to Blue Morin MCQ 2.9).
+
+\[
+v=a_1t_1=a_2t_2
+\]
+The average speed of both parts is $v_{\max}/2$, so the average speed of the whole thing is $v/2$, which means
+\[
+s=\frac{vT}{2}
+\]
+Do some algebra to solve for $T$ and eliminate unknowns like $v$.
+
+The most efficient method here is to use limiting cases. Checking $a_1\to\infty$ and $a_2\to\infty$ yields the answer.
+
+\section*{Problem 6}
+\hspace*{\parindent} The key insight is that the question states it is a ``bucket of negligible mass,'' so only the weight of the water matters. While submerged in water, the weight of the water in the bucket is canceled by the buoyant force. It is all water, so $\rho_w=\rho_w$, and it takes no force to move it slowly, meaning at constant $v$, until the top of the bucket is at the surface.
+
+Then use energy conservation with the center of mass of the bucket of water. The work done goes into
+\[
+mgh/2
+\]
+where $h/2$ is the change in gravitational potential energy for the center of mass. Substitute $\rho V$ for $m$.
+
+The key insight is that energy conservation works because the bucket of water can be treated as a point mass at its center of mass.
+
+\section*{Problem 7}
+\hspace*{\parindent} You need to imagine the problem. The wall is moving slowly inward. Find the time for a round trip. One round trip means one boost collision because only one wall is moving inward. Then compare that with the time the wall is moving inward and divide to find the number of collisions.
+
+\section*{Problem 9}
+\hspace*{\parindent} The question specifies that $h$ is the same for both.
+
+\[
+g_{\mathrm{eff}}=g-a
+\]
+Weightless height equals Mars gravity height:
+\[
+\frac12 gt^2=\frac12 g_{\mathrm{eff}}T^2
+\]
+
+\section*{Problem 10}
+\hspace*{\parindent} Conservation of angular momentum applies here. However, my mistake was assuming the disk stayed in place. ``Frictionless table'' implies that the disk is free to move.
+
+Initially, the center of mass of the disk is at rest and the stone, before contact with the disk, is at rest, so the center of mass of the system is at rest. Since $\sum F=0$, it stays at rest. So when the stone is placed on the disk and they stop spinning with respect to each other, they must be spinning about their center of mass in order to keep it at rest.
+
+The center of mass is at $R/2$ from the center of the disk. Use the parallel-axis theorem for the new $I_{\text{disk}}$.
+
+\section*{Problem 12}
+\hspace*{\parindent} Good job recognizing that energy conservation can be used to get the maximum displacement and then use that to find the maximum force, which must be less than or equal to the maximum static friction between the platform and the ground.
+
+The mistake was forgetting $g$, which led to being off by a factor of $10$.
+
+\section*{Problem 16}
+Yes, it instantaneously stops at $x=L$. Simply, at $x=L$, $v=0$.
+
+\noindent No, it is not uniformly accelerated:
+\[
+a=\left(\frac{dv}{dx}\right)\left(\frac{dx}{dt}\right)=kv
+\]
+where $k$ is a negative integer based on the graph. Then $a$ is not constant because $v$ is not constant.
+
+It is not SHM because that would imply
+\[
+\frac{mv^2}{2}+\frac{kx^2}{2}=E_{\text{total}}
+\]
+but that produces a $v$-$x$ graph that is not linear.
+
+\section*{Problem 19}
+\hspace*{\parindent} The key ideas are to treat the cavity as having negative mass to cancel out the gravity it would have produced if it were filled in, and to apply the principle of superposition to add the forces of gravity from a filled-in planet and a negative-mass cavity.
+
+Use the Pythagorean theorem to get the distance from the point to the center of the cavity.
+
+\[
+g=\sqrt{g_y^2+g_x^2}
+\]
+
+\section*{Problem 20}
+\hspace*{\parindent} Good job recalling the fact that the same side of the moon always faces Earth, meaning the moon is tidally locked to Earth.
+
+The key is that the speed of the terminator is the tangential speed of a point on the moon. In the rotating frame on the moon, the terminator rushes at you at the same speed you rush toward the terminator in an inertial frame.
+
+Because the same side of the moon always faces Earth, the period of the moon's revolution must match the period of its orbit, which is a month.
+
+\section*{Problem 21}
+\hspace*{\parindent} The key idea is that if the incline is too steep, the sphere will slip and dissipate energy.
+
+The final translational plus rotational kinetic energy equals the initial $U_g$ only in the special case that it rolls without slipping.
+
+Slipping occurs when the friction needed for
+\[
+\alpha=\frac{a}{r}
+\]
+which is the non-slipping condition, exceeds $f_{s,\max}$.
+
+If you do the math, it turns out that
+\[
+f=\frac{2}{7}mg\sin\theta\le \mu mg\cos\theta
+\]
+so
+\[
+\tan\theta\le \frac{7\mu}{2}
+\]
+If one had to guess, $80^\circ$ would certainly slip, and the question is likely testing that key idea that it would slip and lose energy, so the answer must be the smallest angle listed, which should be the only angle below the slipping threshold.
+
+\section*{Problem 22}
+\hspace*{\parindent} For the ice to be pushed down, static friction would point up.
+
+Break the forces into components. The vertical component of the normal force must be greater than the vertical component of static friction.
+
+To eliminate answer choices, check the limiting cases $0^\circ$ and $90^\circ$.
+
+\section*{Problem 23}
+\hspace*{\parindent} One-line version: regular period with amplitude $A-d$ and extra $2d$ that must be traveled through twice in one period, so the answer should have $A-d$ and $4d$ in it.
+
+The key is that the time it takes to pass $2d$ is
+\[
+\frac{2d}{v}
+\]
+where $v$ can be found via energy conservation, and that segment of length $2d$ is passed twice in one period.
+
+\section*{Problem 24}
+\hspace*{\parindent} They are ``diametrically opposite,'' so for the first satellite to meet the second satellite in $T/2$, it must complete a full orbit in the time it takes for the second satellite to complete half an orbit.
+
+\begin{enumerate}[leftmargin=1.5em,label=\arabic*.,itemsep=0.3em]
+    \item The new period relates to the new semimajor axis, so find $a$ in terms of $r$ by taking the ratio of the new and old periods and semimajor axes
+    \item Use energy to relate $a$, $v$, and $r$, plugging in $a$ in terms of $r$
+    \item Use the $v$ of a circular orbit to eliminate the unknowns $G$, $M$, and $r$, then solve
+\end{enumerate}
+
+\end{document}
