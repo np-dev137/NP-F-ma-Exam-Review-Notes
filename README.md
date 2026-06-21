@@ -21,7 +21,8 @@ These notes document my solutions for every problem I made a mistake on or wante
 - 2017 — In Progress
 - 2018 — In Progress
 - 2019 — In Progress
-- 2020 — In Progress
+- 2020A — Completed
+- 2020B - In Progress
 - 2021 — In Progress
 - 2022A - Completed
 - 2022B — In Progress
