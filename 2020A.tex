@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\title{2020A F=ma Exam Review}
+\author{Nathan P.}
+\date{January 7, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Problem 3}
+Given $F/A\propto L$, then $F\propto AL$, and $A\propto L$ because ``wedge-shaped'' means triangular. So $F\propto L^2$, and
+\[
+E=\int F\,dx
+\]
+so $E\propto L^3$, meaning $2E$ means $2^{1/3}L$.
+
+\section*{Problem 6}
+If $a$ is proportional to $b$, then final-to-initial $a$ equals final-to-initial $b$. If $a\propto 1/b$, then final-to-initial $a$ equals initial-to-final $b$.
+
+The star is losing mass. There is no external torque, so angular momentum is conserved.
+
+If something constant like $L$ is proportional to $\sqrt{Mr}$, then $M\propto 1/r$.
+
+\section*{Problem 8}
+The question: given a $v$-$x$ graph, find an $a$-$x$ graph.
+
+A $v$-$x$ graph is linear, so
+\[
+\frac{dv}{dx}=k, \qquad v=kx
+\]
+Then
+\[
+a=\frac{dv}{dx}\frac{dx}{dt}=\frac{dv}{dx}v=k^2x
+\]
+so
+\[
+\frac{da}{dx}=k^2
+\]
+which is just a constant, so the $a$-$x$ graph is linear.
+
+As for whether $a$ starts at zero, just consider that at $x=0$, $v=0$, so it stays at $x=0$, meaning $a$ must be $0$.
+
+\section*{Problem 12}
+It is a massless rod, so it is not actually a physical pendulum, and
+\[
+T=\sqrt{\frac{d}{g}}
+\]
+where $d$ is the distance to the mass.
+
+\section*{Problem 13}
+The vertical component of angular momentum is conserved because there are no external vertical torques. There is only gravity while it falls and normal force when it hits the ground, both of which are vertical forces that cannot exert vertical torques.
+
+Only horizontal forces exert vertical torques.
+
+\section*{Problem 16}
+Given: $U/A$ is constant. The two spheres have different surface areas, so merging into one means the same total volume but different surface area, and thus there is a change in $U$. The question specifies that this change in energy is fully converted into $K$, which converts to $U_g$.
+
+Start with the energy conservation fact:
+\[
+U_i=U_f+mgh, \qquad \Delta U=mgh
+\]
+so we need to find how $\Delta U$ relates to $r$.
+
+We know that $U_i\propto r^2$, but must relate the masses and volumes to find how final energy relates to $r$.
+
+Since $2m=M$,
+\[
+2r^3=(r')^3
+\]
+so $r'\propto r$, which means $U_f$ also $\propto r^2$. Therefore $\Delta U\propto r^2$, so find the $h$ dependence on $r$.
+
+\section*{Problem 17}
+Identify what is contributing to the force: the original $5000$, force to stop rain momentum, and weight of accumulated rain.
+
+We are given:
+\[
+v=1, \qquad A=1, \qquad \frac{dh}{dt}=0.001\,\text{m/s}, \qquad \rho=1000
+\]
+
+Force to stop rain momentum:
+\[
+F=\frac{mv}{t}=\rho A\frac{h}{t}v=1000\cdot 1\cdot 0.001\cdot 1=1\,\text{N}
+\]
+
+Same thing:
+\[
+m=\rho V=\rho Ah, \qquad \frac{dm}{dt}=\rho A\frac{dh}{dt}=1000\cdot 1\cdot 0.001=1\,\text{kg/s}
+\]
+so
+\[
+F=\frac{dm}{dt}v=1\cdot 1=1
+\]
+
+Weight of rain:
+\[
+mg=\frac{dm}{dt}gt=10t
+\]
+
+\section*{Problem 18}
+Conservation of $L$ using $v'$ and $r$ is easier instead of $I\omega$.
+
+Use conservation of energy while keeping in mind that the middle mass moves at $v'/2$.
+
+\section*{Problem 19}
+Since $v_{\mathrm{cm}}=r\omega$, a point on the top of the circle travels at
+\[
+v_{\mathrm{cm}}+r\omega=2r\omega
+\]
+
+\section*{Problem 20}
+Fact:
+\[
+\langle x^2\rangle\ge \langle x\rangle^2
+\]
+The average of the square is greater than the square of the average, with equality if there is no fluctuation.
+
+\section*{Problem 22}
+\begin{itemize}[leftmargin=1.5em]
+    \item Fact: if $\Delta p=0$, momentum is conserved regardless of the inertial frame.
+    \item An inertial frame is defined as one where Newton's First Law holds, and the only difference between two inertial frames is their relative velocity.
+    \item Since $p=mv$, different inertial frames will simply see total $p$ to be different but constant because $\Delta p=0$, whether or not the collision is elastic.
+    \item Fact: $\Delta K=0$ for elastic collisions, independent of inertial frame.
+    \item The official solution points out how inelastic collisions will have energy dissipated as heat, and the temperature change of the masses is independent of frame, so $\Delta K$ is the same in general.
+    \item New fact learned: $\Delta p$ and $\Delta K$ are independent of inertial frame.
+\end{itemize}
+
+
+\section*{Problem 23}
+$F\propto x$. If the force reading is multiplied by $5$, then the stretch $x$ is also multiplied by $5$.
+
+For quotient uncertainty, add the fractional uncertainties in quadrature:
+\[
+\frac{\Delta k}{k}=\sqrt{\left(\frac{\Delta F}{F}\right)^2+
+\left(\frac{\Delta x}{x}\right)^2}.
+\]
+
+The important detail is that the absolute uncertainties $\Delta F$ and $\Delta x$ stay constant. If $F$ and $x$ both become $5$ times larger, then
+\[
+\frac{\Delta F}{5F}=\frac{1}{5}\frac{\Delta F}{F},
+\qquad
+\frac{\Delta x}{5x}=\frac{1}{5}\frac{\Delta x}{x}.
+\]
+Therefore the new fractional uncertainty in $k$ is
+\[
+\sqrt{\left(\frac{\Delta F}{5F}\right)^2+
+\left(\frac{\Delta x}{5x}\right)^2}
+=\frac{1}{5}
+\sqrt{\left(\frac{\Delta F}{F}\right)^2+
+\left(\frac{\Delta x}{x}\right)^2}.
+\]
+So the uncertainty in $k$ becomes $1/5$ as large.
+
+\end{document}
