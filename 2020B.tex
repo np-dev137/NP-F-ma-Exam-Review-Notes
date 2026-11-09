@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\title{2020B F=ma Exam Review}
+\author{Nathan P.}
+\date{January 10, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Problem 2}
+Use the perpendicular axis theorem to find $I$ about the center, perpendicular to the plane of the square, then use it again to get back to $I_{\text{diag}}$ in the plane of the square.
+The moment of inertia about the perpendicular axis through the center is the intermediate step: going out of the plane to get back to the plane in a different orientation.
+
+\section*{Problem 3}
+Don't have one fixed idea of what a variable is. $\omega$ is angular frequency, and that's used for both SHM and circular motion.
+Circular motion and some geometry.
+You can also use limiting cases to solve/check.
+
+\section*{Problem 5}
+These gravitation problems often pair conservation of angular momentum and energy.
+Pay attention to when you can approximate certain energies as $0$, especially in gravitation problems.
+
+\section*{Problem 6}
+Find the max force for each leg and look for those edge cases.
+Use symmetry.
+Use several axes to balance torque, and draw in the lever arms.
+
+\section*{Problem 7}
+See ``period'' in a gravitation problem and think Kepler's third law. Same period means same $a$, which means the same total energy.
+$\tfrac12m(v+\Delta v)^2$: square the individual velocities first if they're in perpendicular directions. If they're in the same direction, then square after adding $v+\Delta v$.
+Drop out small terms.
+
+\section*{Problem 10}
+$\omega=\sqrt{k/\mu}$.
+Knowing the formula is enough, but make sure to check the answer options for the answer you actually got, possibly in a different form.
+Alternatively, consider the force on one mass. The tension is $2kx$ because it's pulled $2x$, so you have $k_{\text{eff}}=2k$ on one mass.
+
+\section*{Problem 13}
+Another deriving-the-moment-of-inertia type problem. The perpendicular and parallel axis theorems are used. Use symmetry to get to the perpendicular axis.
+Then simply apply $\omega=\sqrt{mgd/I}$ and check if the options have your answer in a different format.
+
+\section*{Problem 14}
+Write out the equation for momentum conservation for the first, the second, until you see the pattern.
+New fact: you can treat several perfectly inelastic collisions as one collision between the initial mass and the total added-on mass.
+
+\section*{Problem 15}
+Again, be careful imagining the setup. The valves are not open to air; the question never said that. They're there to open or block the tube.
+Find the equation that serves as the condition for equilibrium: the total pressure at the bottom is $P=P_0+\rho gh+mg/A$, and for it to be in equilibrium, $mg/A$ must be the same for all of them, so
+\[
+\frac{m_1}{A_1}=\frac{m_2}{A_2}=\frac{m_3}{A_3},
+\]
+and closing either valve does not change the mass or area, so the pressure remains the same and there's no movement.
+
+\section*{Problem 17}
+For $m$ to return to its max height, it must flip its velocity at the bottom. This is an elastic collision where the masses simply flip velocity, so we are in the com frame: $MV=mv$.
+$V$ is obtained via energy conservation, and that's how you get $\Delta x$.
+$v$ is obtained via $\sqrt{2gh}$, and $h$ is from the previous question, setting $t=T/4$.
+
+\section*{Problem 18}
+Be flexible. Imagine extending the complex spring system.
+Virtual work: if you nudge the system slightly, how would the energy change? Core concept: a system is in equilibrium if the total work done by all forces during an infinitesimal, hypothetical displacement is zero ($\sum dW=0$).
+Goal: find $T_1/T_2$. Think about if the system was stretched by $dx$: how much is each part of the system stretched (each spring being a fraction of the total stretch), and what work do the tensions do? Set up the net work $=0$ equation and solve for the goal.
+
+\section*{Problem 20}
+The balloon pushes up with some buoyant force, so the scale must read less than $Mg$, but we don't know how strong the buoyant force is, so we can't tell if it's greater or less than $(M-m)g$.
+
+\section*{Problem 21}
+Angular momentum is conserved.
+Energy isn't conserved because the person does work to stand up. If you think about it, $v$ increases since $I$ decreases, but the person's $mgh$ also increases, so the energy increased; it's not conserved.
+Linear momentum isn't conserved because there's an external force from the pivot.
+
+\section*{Problem 22}
+Sum the forces on the top and bottom separately.
+Either find the relative acceleration by subtracting the ground-frame accelerations (top minus the frame, i.e.\ the bottom), or add a fictitious force $ma$ in the opposite direction to the acceleration of the frame (the bottom block). Either way you get the acceleration of the mass relative to the block.
+Then use a kinematic equation to get $\Delta x$ in the frame of the block.
+You can write $v$ as $p/m$; it's also sometimes more convenient to write $K=p^2/2m$.
+
+\section*{Problem 23}
+Write it out: $[\text{variable of interest}]\propto x^ay^bz^c$, and either eyeball $a$, $b$, $c$ or solve the system, whichever's faster.
+If $x\propto yz$ and $x$ is constant, then $y\propto 1/z$.
+
+\section*{Problem 24}
+If $m_A\gg m_B\gg m_C$, then $v_B=2v$ and $v_C=2v_B$, so $v_C=4v$.
+It intends to get you to consider limiting cases.
+
+\end{document}

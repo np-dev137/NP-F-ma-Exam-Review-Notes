@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\title{2007 F=ma Exam Review}
+\author{Nathan P.}
+\date{December 6, 2025}
+
+\begin{document}
+\maketitle
+
+\section*{Problem 1}
+The object crosses the $x$-axis when its $y$ coordinate is $0$, and the $\hat\jmath$ component being $0$ is equivalent to this.
+
+\section*{Problem 6}
+$x=\int v\,dt$. $x$ is not simply $vt$, because $v$ is not constant.
+
+\section*{Problem 9}
+There are no net forces in the horizontal direction, so the CM won't move horizontally. However, there IS a net external force vertically: gravity! The CM WILL accelerate downward.
+You can also separate the CM of the individual objects: the CM of the wedge isn't moving vertically, but the CM of the block is moving down, so the CM of the system must move down.
+
+\section*{Problem 15}
+Not a math error: it was setting up the equation DIRECTIONS. Morin's problem-solving techniques warn about this. Pay attention to directions when summing forces/torques! Other than that, relate $a/r=\alpha$ and solve for the tension.
+
+\section*{Problem 17}
+The condition for the tangential component to be double the perpendicular component is that the perpendicular:tangential ratio is the same as the $v_x:v_y$ ratio, by triangle geometry. Then plug the time you get into $h=gt^2/2$ to check that it's within the physical limit.
+
+\section*{Problem 18}
+Energy conservation: $E_i-W_f=E_f=0$. Solve for $\mu$.
+
+\section*{Problem 21}
+More radius means more area/volume, which means more MASS, and that contributes to things like rotational inertia or gravity. Identify how mass is proportional to $L$, $A$, or $V$, and therefore to $r$, $r^2$, or $r^3$.
+
+\section*{Problem 24}
+$\Delta x=vt+\tfrac12at^2$ in both the $x$ and $y$ directions; set it $=0$, because that is the condition in question. Solve for $t$ in each and set them equal to get the angle relation.
+OR, recognize that $v_0$ and the total $a$ must be in opposite directions: $\tan\theta=a_y/a_x$.
+
+\section*{Problem 25}
+Finding the period of small oscillations? Identify the variable that's oscillating. In this case, it's the displacement $x$ from $h_{\text{eq}}$.
+At equilibrium ($\sum F=0$), $\rho(Lwh)g=mg$.
+When displaced from equilibrium, $\sum F=-\rho(Lwx)g$, which is the restoring force:
+\[
+-\rho(Lwx)g=m\ddot x,
+\]
+because $x$ is the only variable changing (literally everything else is constant). From there,
+\[
+\omega^2=\frac{\rho Lwg}{m},\qquad T=\frac{2\pi}{\omega}.
+\]
+
+\section*{Problem 28}
+Careful: $mg$ is $w/2$ away from the bottom of the front tire, not the full $w$. Other than that, include the pseudo translational force to balance the torques $Mah$ and $Mgw/2$ for this statics problem.
+
+\section*{Problem 29}
+Same thing: $mg$ is at a distance $w/2$. There's an incorrect answer option designed to catch exactly that mistake.
+
+\section*{Problem 32}
+Imagine the setup carefully; sometimes you have to identify and rethink your assumptions.
+Given $\omega=\beta\sqrt{g/d}$, set it equal to the standard $\omega=\sqrt{mgd/I}$, plug in $kd$ for the distance from the com, and use the parallel axis theorem for $I$. Solve for $\beta$ now that everything's in the given variables. Plug it all in: it's none of the above.
+
+\section*{Problem 33}
+Think about the physical constraint. To maximize, take the derivative of $\beta^2$ (which is easier to differentiate and has the same max as a function of $\beta$) and set it to $0$ to find the $k$ value that maximizes $\beta$. Check that this $k$ value is within the physical constraint $kd<L/2$ (it is). Plug in that $k$ to find the max value of the function in question.
+
+\section*{Problem 34}
+Remember: for a string wrapping around a pole, $\Delta E=0$ and $\Delta L<0$. For a string through a hole being pulled, $\Delta E>0$ and $\Delta L=0$.
+This one is like the pole case. $v$ is always perpendicular to the rope (no parallel component, by conservation of string), so the tension does no work. Alternatively, the unmoving pole does no work on the rope. Energy is conserved. It only has kinetic energy, which stays constant, so $v_0$ stays constant. Use circular motion to relate the tension to the final length.
+
+\end{document}

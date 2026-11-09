@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\title{2019B F=ma Exam Review}
+\author{Nathan P.}
+\date{January 8, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Problem 3}
+Key idea: in equilibrium (it's static), the tension in both springs must be equal. You can think of it as the point connecting the springs being at rest, so it has no net force on it.
+Write out two equations,
+\[
+k_1x_1=k_2x_2,\qquad \frac{U_1}{U_2}=\frac{\tfrac12k_1x_1^2}{\tfrac12k_2x_2^2}.
+\]
+The answer options show we need a ratio of $k_1$ and $k_2$ (and the question didn't give the $x$'s), so we should eliminate $x_1$ and $x_2$.
+
+\section*{Problem 4}
+Consider the energies at the beginning (the same for both) and when they are at a distance $r$. Set up the energy equations. This way, we can directly compare the KE of the system when they are at a distance $r$, because the initial and final potential energies are the same.
+Remember, releasing both means they both will have $v'$ at a distance $r$ (same mass, must have the same momentum, so both $v'$).
+Remember, releasing both means the initial distance is travelled with relative velocity $2v'$.
+OR: another way to solve the problem is to consider the non-inertial frame of one of the masses. It'll appear as if the other mass had $2F_g$, equivalent to doubling the universal gravitation constant $G$. Then think energy: the initial potential is doubled, $2Gmm/r$, so the kinetic energy at any later point will be doubled, and $K\propto v^2$, so $2K\to v\sqrt2$.
+If $v'=v\sqrt2$, then $T'=T/\sqrt2$ (same distance, $\sqrt2$ times the speed, reduces $t$ by $\sqrt2$).
+
+\section*{Problem 5}
+For constant density,
+\[
+g=\frac{GM}{r^2}=\frac{G\rho\,\tfrac43\pi r^3}{r^2}=\frac{4\pi G\rho}{3}\,r,
+\]
+so $g\propto r$, as we can see.
+When the density decreases the further you go, the slope should decrease.
+
+\section*{Problem 6}
+Gauss's law for gravity.
+
+\section*{Problem 10}
+$\Delta p_x=0$; set up momentum conservation.
+
+\section*{Problem 11}
+Moment of inertia of the square minus the $I$ of the disk, but careful, because the $m$ of the disk is different (smaller) than the square's.
+
+\section*{Problem 13}
+Dimensional analysis: you're only given $v$ and $g$, and the only way to get a length is $v^2/g$.
+
+\section*{Problem 15}
+Draw in the forces and set up similar-triangle ratios. Tension is unknown, so just use drag and centripetal, which would be the opposite side and hypotenuse of the triangle respectively.
+
+\section*{Problem 16}
+Initially there's slipping, later there's no slipping, so break it into two phases.
+Find the first phase's time by setting $v(t)=r\,\omega(t)$.
+Find the remaining distance $\Delta x$.
+In this problem, it turns out $v(T_{\text{first phase}})=-v_0$, and since the acceleration was constant, this means it has returned back to the starting place.
+Indeed, solving for $\Delta x=0$ yields the same $T$.
+
+\section*{Problem 17}
+If $I$ was changed, there would be a greater angular acceleration and it would stop slipping sooner, changing the total time to return.
+
+\section*{Problem 20}
+Write $\Delta x$ in terms of $a$ and $t$ only, divide, and get the answer.
+Going up, the acceleration is $g(\sin\theta+\mu\cos\theta)$ down the incline; going down, it's $g(\sin\theta-\mu\cos\theta)$ down the incline.
+
+\end{document}
